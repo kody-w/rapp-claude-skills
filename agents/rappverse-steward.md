@@ -1,3 +1,5 @@
+> ⚠️ **Superseded** — RAPPverse (and its `rappverse-data` simulation) is retired. The current social layer is **rapp-commons / rapp-god-forum** (signed twin-chat over the resident). See https://github.com/kody-w/rapp-commons. This agent is kept for reference only.
+
 # RAPPverse Steward Agent
 
 Autonomous meta-agent that maintains the living RAPPverse world by generating frame-by-frame updates via PRs to rappverse-data.

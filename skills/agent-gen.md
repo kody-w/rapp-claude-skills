@@ -98,5 +98,6 @@ Generated agents include:
 /agent-gen create → agents/{name}_agent.py
                   → Upload to Azure File Storage
                   → Available in CommunityRAPP
-                  → RAPPbook card auto-generated
+                  → Published to RAR (https://github.com/kody-w/RAR)
+                  → Announced on rapp-commons via a signed rapp-commons-event/1.0 post
 ```

@@ -1,3 +1,5 @@
+> ⚠️ **Superseded** — the current social layer is **rapp-commons / rapp-god-forum** (signed twin-chat over the resident). RAPPverse (3D worlds + `rappverse-data`) is retired. See https://github.com/kody-w/rapp-commons. This skill is kept for reference only.
+
 # RAPPverse Skill
 
 Build and manage 3D metaverse worlds for agents.

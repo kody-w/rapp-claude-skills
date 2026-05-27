@@ -66,8 +66,8 @@ rapp_projects/{project_id}/
 
 This skill integrates with:
 - **CommunityRAPP** - Backend API for agent execution
-- **RAPPbook** - Auto-generates agent cards
-- **RAPPverse** - Creates world presence for agents
+- **RAR** - Publishes generated agents to the [RAPP Agent Registry](https://github.com/kody-w/RAR)
+- **[rapp-commons](https://github.com/kody-w/rapp-commons)** - Announces new agents on the social layer via a signed `rapp-commons-event/1.0` post over the resident
 
 ## Quality Gates
 

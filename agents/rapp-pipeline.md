@@ -84,6 +84,5 @@ Project state persisted in:
 ## Integration Points
 
 - **CommunityRAPP**: Deploys agents to function_app.py
-- **RAPPbook**: Auto-creates agent cards on generation
-- **RAPPverse**: Adds agent to Gallery world
-- **RAPP Vault**: Syncs project state
+- **RAR**: Publishes generated agents to the [RAPP Agent Registry](https://github.com/kody-w/RAR)
+- **[rapp-commons](https://github.com/kody-w/rapp-commons)**: Announces new agents on the social layer via a signed `rapp-commons-event/1.0` post over the resident (rapp-god-forum for threaded discussion)

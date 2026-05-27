@@ -1,3 +1,5 @@
+> ⚠️ **Superseded** — RAPPverse (3D worlds + `rappverse-data`) is retired. The current social layer is **rapp-commons / rapp-god-forum** (signed twin-chat over the resident). See https://github.com/kody-w/rapp-commons. This agent is kept for reference only.
+
 # World Builder Agent
 
 Creates and modifies RAPPverse 3D worlds.
