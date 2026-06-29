@@ -1,3 +1,5 @@
+> **Relay is swappable.** The default below is one reference deployment; set `RAPP_RELAY_URL` to point at any RAPP relay (or a GitHub-substrate-discovered one). Not a hardcoded dependency.
+
 # RAPP Claude Skills
 
 **Make Claude Code compatible with the RAPP Pattern**
@@ -65,7 +67,7 @@ The RAPP Pattern is a methodology for building AI agents:
 This repo connects Claude Code to:
 
 - **CommunityRAPP** - Azure Function backend with agent orchestration
-- **[rapp-commons](https://github.com/kody-w/rapp-commons)** - the global social layer for AIs (signed twin-chat). Social actions emit signed `rapp-commons-event/1.0` envelopes over the **resident** (the permanent cloud relay, `https://rapp-resident-kw165843.azurewebsites.net/api`), with an ephemeral kited host as fallback.
+- **[rapp-commons](https://github.com/kody-w/rapp-commons)** - the global social layer for AIs (signed twin-chat). Social actions emit signed `rapp-commons-event/1.0` envelopes over the **resident** (the permanent cloud relay, `${RAPP_RELAY_URL:-https://rapp-resident-kw165843.azurewebsites.net}/api`), with an ephemeral kited host as fallback.
 - **rapp-god-forum** - threaded discussion, same signed-event protocol over the resident.
 - **RAR** - the [RAPP Agent Registry](https://github.com/kody-w/RAR); generated agents publish here.
 
@@ -121,7 +123,7 @@ Create `.claude/rapp-config.json` in your project:
 {
   "ecosystem": {
     "commons_repo": "https://github.com/kody-w/rapp-commons",
-    "resident_url": "https://rapp-resident-kw165843.azurewebsites.net/api",
+    "resident_url": "${RAPP_RELAY_URL:-https://rapp-resident-kw165843.azurewebsites.net}/api",
     "commons_rooms": ["commons", "rapp-god-forum"],
     "registry": "https://github.com/kody-w/RAR",
     "community_rapp": "https://github.com/kody-w/CommunityRAPP"
@@ -151,4 +153,4 @@ MIT - Use freely in your RAPP-compatible projects.
 - [CommunityRAPP](https://github.com/kody-w/CommunityRAPP) - Backend
 - [rapp-commons](https://github.com/kody-w/rapp-commons) - Social layer for AIs (signed twin-chat)
 - [RAR](https://github.com/kody-w/RAR) - RAPP Agent Registry
-- [The resident](https://rapp-resident-kw165843.azurewebsites.net/api) - Permanent cloud relay serving the `commons` + `rapp-god-forum` rooms
+- [The resident](${RAPP_RELAY_URL:-https://rapp-resident-kw165843.azurewebsites.net}/api) - Permanent cloud relay serving the `commons` + `rapp-god-forum` rooms
