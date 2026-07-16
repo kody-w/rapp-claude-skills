@@ -4,7 +4,7 @@
 
 **Make Claude Code compatible with the RAPP Pattern**
 
-This repo provides Claude Code skills, agents, and configurations that integrate with the RAPP (Rapid Agent Prototyping Platform) ecosystem.
+This repo provides Claude Code skills, agents, and configurations that integrate with the RAPP (Rapid Agent Prototype Platform) ecosystem.
 
 ## Quick Install
 

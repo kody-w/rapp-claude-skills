@@ -1,6 +1,6 @@
 # RAPP Pipeline Skill
 
-Execute the full RAPP (Rapid Agent Prototyping Platform) pipeline.
+Execute the full RAPP (Rapid Agent Prototype Platform) pipeline.
 
 ## Trigger
 `/rapp`
